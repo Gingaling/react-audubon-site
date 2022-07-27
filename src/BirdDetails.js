@@ -14,15 +14,7 @@ export default function BirdDetails(props) {
 			})
 			.catch(console.error());
 	}, []);
-
-    
-    //this will render if the above if statement is no longer true
-    return (
-        // normal return 
-        )
-        
-    
-        if (!bird) {
+ if (!bird) {
       return <p>Loading bird information ...</p>
     }
       

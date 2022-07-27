@@ -1,7 +1,10 @@
 {
     "workbench.colorCustomizations": {
-        "activityBar.background": "#04304B",
-        "titleBar.activeBackground": "#064469",
-        "titleBar.activeForeground": "#F8FCFF"
-    }
+        "activityBar.background": "#42270E",
+        "titleBar.activeBackground": "#5C3714",
+        "titleBar.activeForeground": "#FDF9F6"
+    },
+    "marquee.widgets.npm-stats.packageNames": [
+        "react-audubon-site"
+    ]
 }

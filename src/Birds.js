@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,24 +10,26 @@ export default function Birds(props) {
 
 	useEffect(() => {
 		fetch(url)
-			.then((res) => res.json())
-			.then((data) => {
+			.then(res => res.json())
+			.then(data => {
 				setBirds(data);
 			})
 			.catch(console.error());
 	}, []);
 
 	return (
-		<section className='container'>
-			{birds.map((bird) => {
+		<section className="container">
+			{birds.map(bird => {
 				return (
 					<Link to={`details/${bird.id}`} key={bird.id}>
-						<div className='card'>
-							<div className='card-image'>
+						<div className="card">
+							<div className="card-image">
 								<img src={bird.image} alt={birds.genus} />
 							</div>
-							<div className='card-title'>
-								<h3>{bird.name}</h3>
+							<div className="card-title">
+								<h3>
+									{bird.name}
+								</h3>
 							</div>
 						</div>
 					</Link>
